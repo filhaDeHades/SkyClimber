@@ -1,3 +1,5 @@
+#A função de rolagem está com um bug ao chegar no fim da 4ª imagem
+
 from PPlay.window import *
 from PPlay.sprite import *
 from PPlay.gameobject import *
