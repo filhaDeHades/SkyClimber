@@ -193,9 +193,15 @@ def Jogo(windows):
     nuvem2 = GameImage("imagens/fundo/nuvens.png")
     nuvem2.y = nuvem1.height
 
+    #Oq realmente vai ser o jogador por enquanto
     jogador = GameObject()
     jogador = Sprite("imagens/jogo/bola.png", frames=1)
-    jogador.set_position(windows.width/2, windows.height/2)
+    jogador.set_position(windows.width/2, ((windows.height/3)*2)-30)
+
+    #personagem puramente grafico por enquanto
+    jog1 = GameObject()
+    jog1 = Sprite("imagens/jogo/psc1.png")
+    jog1.set_position(windows.width/2-jog1.width/2, windows.height - (jog1.height-40))
 
     while(1):
         if tecla.key_pressed("esc"):
@@ -204,4 +210,5 @@ def Jogo(windows):
         mont.draw()
         rolar2(nuvem1, nuvem2, velocFundo - nuvem, windows)
         jogador.draw()
+        jog1.draw()
         windows.update()
