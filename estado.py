@@ -1,5 +1,3 @@
-#A função de rolagem está com um bug ao chegar no fim da 4ª imagem
-
 from PPlay.window import *
 from PPlay.sprite import *
 from PPlay.gameobject import *
@@ -8,6 +6,7 @@ from PPlay.mouse import *
 from PPlay.keyboard import *
 from PPlay.sound import *
 from time import sleep
+from pygame import transform
 
 roxo = [190, 117, 216]
 vermelho = [234, 148, 124]
@@ -37,11 +36,13 @@ def rolar1(bg1, bg2, bg3, bg4, fv, windows):
     bg4.y -= fv * (windows.delta_time()+0.5)
 
     if bg4.y <= 0:
-        bg1.y = bg1.height
-        bg2.y = 2 * bg1.height
-        bg3.y = 3 * bg1.height
+        bg1.y = bg4.y + bg4.height
+        bg2.y = bg1.y + bg1.height
+        bg3.y = bg2.y + bg2.height
+        #bg2.y = 2 * bg1.height
+        #bg3.y = 3 * bg1.height
         if (bg4.y + bg4.height) <= 0:
-            bg4.y = 4 * bg1.height
+            bg4.y = bg3.y + bg3.height
 
     bg4.draw()
     bg3.draw()
@@ -132,34 +133,32 @@ def Creditos(windows):
     mont.x = posF
     mont.y = posF
 
-    grad1 = GameImage("imagens/fundo/gradiente1.png")
-    grad1.x = posF
+    grad1 = GameImage("imagens/fundo/gradiente2.png")
     grad1.y = posF
 
-    grad2 = GameImage("imagens/fundo/gradiente3.png")
-    grad2.x = posF
+    grad2 = GameImage("imagens/fundo/gradiente4.png")
     grad2.y = posF + grad1.height
 
-    grad3 = GameImage("imagens/fundo/gradiente4.png")
-    grad3.x = posF
+    grad3 = GameImage("imagens/fundo/gradiente3.png")
     grad3.y = posF + 2 * grad1.height
 
-    grad4 = GameImage("imagens/fundo/gradiente2.png")
-    grad4.x = posF
+    grad4 = GameImage("imagens/fundo/gradiente1.png")
     grad4.y = posF + 3 * grad1.height
 
-    nuvem = GameImage("imagens/fundo/nuvens.png")
-    nuvem.x = posF
-    nuvem.y = posF
+    nuvem1 = GameImage("imagens/fundo/nuvens.png")
+    nuvem1.y = posF
+
+    nuvem2 = GameImage("imagens/fundo/nuvens.png")
+    nuvem2.y = nuvem1.height
 
     voltar = GameObject()
     voltar = Sprite("imagens/voltar2.png", frames=2)
     voltar.set_position((windows.width/2)-(voltar.width/2), (windows.height - voltar.height)-borda)
 
     while(1):
-        grad2.draw()
+        rolar1(grad1, grad2, grad3, grad4, velocFundo, windows)
         mont.draw()
-        nuvem.draw()
+        rolar2(nuvem1, nuvem2, velocFundo - nuvem, windows)
         Texto(texto, windows)
         voltar.draw()
         if Clique(voltar) == 0:
@@ -176,30 +175,33 @@ def Jogo(windows):
     mont.x = posF
     mont.y = posF
 
-    grad1 = GameImage("imagens/fundo/gradiente1.png")
-    grad1.x = posF
+    grad1 = GameImage("imagens/fundo/gradiente2.png")
     grad1.y = posF
 
-    grad2 = GameImage("imagens/fundo/gradiente3.png")
-    grad2.x = posF
+    grad2 = GameImage("imagens/fundo/gradiente4.png")
     grad2.y = posF + grad1.height
 
-    grad3 = GameImage("imagens/fundo/gradiente4.png")
-    grad3.x = posF
+    grad3 = GameImage("imagens/fundo/gradiente3.png")
     grad3.y = posF + 2 * grad1.height
 
-    grad4 = GameImage("imagens/fundo/gradiente2.png")
-    grad4.x = posF
+    grad4 = GameImage("imagens/fundo/gradiente1.png")
     grad4.y = posF + 3 * grad1.height
 
-    nuvem = GameImage("imagens/fundo/nuvens.png")
-    nuvem.x = posF
-    nuvem.y = posF
+    nuvem1 = GameImage("imagens/fundo/nuvens.png")
+    nuvem1.y = posF
+
+    nuvem2 = GameImage("imagens/fundo/nuvens.png")
+    nuvem2.y = nuvem1.height
+
+    jogador = GameObject()
+    jogador = Sprite("imagens/jogo/bola.png", frames=1)
+    jogador.set_position(windows.width/2, windows.height/2)
 
     while(1):
         if tecla.key_pressed("esc"):
             return 1
-        grad2.draw()
+        rolar1(grad1, grad2, grad3, grad4, velocFundo, windows)
         mont.draw()
-        nuvem.draw()
+        rolar2(nuvem1, nuvem2, velocFundo - nuvem, windows)
+        jogador.draw()
         windows.update()
