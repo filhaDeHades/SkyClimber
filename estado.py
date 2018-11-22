@@ -6,7 +6,23 @@ from PPlay.mouse import *
 from PPlay.keyboard import *
 from PPlay.animation import *
 from time import sleep
-from pygame import transform
+import random
+import RockTomb
+
+random.seed()
+preda_speed = 0
+preda_direction = 1
+MAXSIZE = 5
+
+# Numero de linhas da matriz
+matrix_x = 3
+
+# Numero de coluna da matriz
+matrix_y = int(random.uniform(1,MAXSIZE))
+
+
+predas = [[0 for x in range(5)] for x in range(3)] #armazena as preda
+
 
 roxo = [190, 117, 216]
 vermelho = [234, 148, 124]
@@ -209,6 +225,7 @@ def Jogo(windows):
     seta.set_sequence_time(0, 8, 100, loop=True)
     seta.play()
 
+    RockTomb.matrix(matrix_x, matrix_y, predas)
 
     while(1):
         if tecla.key_pressed("esc"):
@@ -238,4 +255,9 @@ def Jogo(windows):
         jog1.draw()
         seta.update()
         seta.draw()
+        for row in range(matrix_x):
+            for column in range(matrix_y):
+
+                predas[row][column].draw()
+
         windows.update()
