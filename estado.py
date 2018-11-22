@@ -4,7 +4,7 @@ from PPlay.gameobject import *
 from PPlay.gameimage import *
 from PPlay.mouse import *
 from PPlay.keyboard import *
-from PPlay.sound import *
+from PPlay.animation import *
 from time import sleep
 from pygame import transform
 
@@ -50,12 +50,12 @@ def rolar1(bg1, bg2, bg3, bg4, fv, windows):
     bg1.draw()
 
 def rolar2(bg1, bg2, fv, windows):
-    bg1.y += fv * (windows.delta_time() + 0.5)
-    bg2.y += fv * (windows.delta_time() + 0.5)
+    bg1.y -= fv * (windows.delta_time() + 0.5)
+    bg2.y -= fv * (windows.delta_time() + 0.5)
 
-    if bg2.y <= 0:
+    if bg2.y >= posF:
         bg1.y = posF
-        bg2.y = bg1.height
+        bg2.y = posF - bg1.height
 
     bg2.draw()
     bg1.draw()
@@ -169,6 +169,7 @@ def Creditos(windows):
         windows.update()
 
 def Jogo(windows):
+    grau = -10
     windows.set_background_color(laranja)
 
     mont = GameImage("imagens/fundo/fundoMontanha.png")
@@ -196,19 +197,45 @@ def Jogo(windows):
     #Oq realmente vai ser o jogador por enquanto
     jogador = GameObject()
     jogador = Sprite("imagens/jogo/bola.png", frames=1)
-    jogador.set_position(windows.width/2, ((windows.height/3)*2)-30)
+    jogador.set_position(windows.width/2, ((windows.height/3)*2)+50)
 
     #personagem puramente grafico por enquanto
     jog1 = GameObject()
     jog1 = Sprite("imagens/jogo/psc1.png")
-    jog1.set_position(windows.width/2-jog1.width/2, windows.height - (jog1.height-40))
+    jog1.set_position(windows.width/2-jog1.width/2, windows.height - (jog1.height-40)+50)
+
+    seta = Animation("imagens/jogo/seta.png", total_frames=9, loop=True)
+    seta.set_position((jogador.x+jogador.width/2) - seta.width/2, (jogador.y -seta.height))
+    seta.set_sequence_time(0, 8, 100, loop=True)
+    seta.play()
+
 
     while(1):
         if tecla.key_pressed("esc"):
             return 1
+        if rato.is_button_pressed(1):
+            n = seta.get_curr_frame()
+            seta.set_initial_frame(n)
+            seta.stop()
+            if n == 0 or n == 8:
+                grau = -35
+            elif n == 1 or n == 7:
+                grau = -18
+            elif n == 2 or n == 6:
+                grau = 0
+            elif n == 3 or n == 5:
+                grau = 18
+            elif n == 4:
+                n = 35
+        janela.set_background_color(laranja)
         rolar1(grad1, grad2, grad3, grad4, velocFundo, windows)
         mont.draw()
-        rolar2(nuvem1, nuvem2, velocFundo - nuvem, windows)
+        if tecla.key_pressed("up"):
+            rolar2(nuvem1, nuvem2, velocFundo - nuvem, windows)
+        nuvem1.draw()
+        nuvem2.draw()
         jogador.draw()
         jog1.draw()
+        seta.update()
+        seta.draw()
         windows.update()
