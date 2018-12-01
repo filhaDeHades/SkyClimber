@@ -18,7 +18,7 @@ MAXSIZE = 5
 matrix_x = 3
 
 # Numero de coluna da matriz
-matrix_y = int(random.uniform(1,MAXSIZE))
+matrix_y = 4
 
 
 predas = [[0 for x in range(5)] for x in range(3)] #armazena as preda
@@ -116,15 +116,15 @@ def Menu(windows):
     nuvem2.y = nuvem1.height
 
     titulo = GameObject()
-    titulo = Sprite("imagens/titulo1.png")
+    titulo = Sprite("imagens/menu/titulo1.png")
     titulo.set_position(windows.width - titulo.width, borda)
 
     play = GameObject()
-    play = Sprite("imagens/play2.png", frames=2)
+    play = Sprite("imagens/menu/play2.png", frames=2)
     play.set_position((windows.width/2)-(play.width/2), (windows.height/2)-(play.height/2))
 
     creditos = GameObject()
-    creditos = Sprite("imagens/creditos2.png", frames=2)
+    creditos = Sprite("imagens/menu/creditos2.png", frames=2)
     creditos.set_position((windows.width/2)-(creditos.width/2), (windows.height - creditos.height)-borda)
 
     while(1):
@@ -168,7 +168,7 @@ def Creditos(windows):
     nuvem2.y = nuvem1.height
 
     voltar = GameObject()
-    voltar = Sprite("imagens/voltar2.png", frames=2)
+    voltar = Sprite("imagens/menu/voltar2.png", frames=2)
     voltar.set_position((windows.width/2)-(voltar.width/2), (windows.height - voltar.height)-borda)
 
     while(1):
@@ -225,7 +225,7 @@ def Jogo(windows):
     seta.set_sequence_time(0, 8, 100, loop=True)
     seta.play()
 
-    RockTomb.matrix(matrix_x, matrix_y, predas)
+    RockTomb.preda(matrix_x, matrix_y, predas)
 
     while(1):
         if tecla.key_pressed("esc"):
