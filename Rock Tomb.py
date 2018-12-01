@@ -9,30 +9,36 @@ preda_speed = 0
 preda_direction = 1
 MAXSIZE = 5
 
-# Numero de linhas da matriz
-matrix_x = [int(random.uniform(1,MAXSIZE))]
 
-# Numero de coluna da matriz
-matrix_y = [3]
-
-
-predas = [[0 for x in range(5)] for x in range(3)] #armazena as preda
+predas = [[0 for x in range(5)] for x in range(3)] #armazena as pedras
 
 
 def preda(i, j, rock_matriz):
 
-
     i = 3 #linhas
+    pedra = GameObject()
+    pedra = Sprite("imagens/jogo/pedra1-2.png")
+    nada = GameObject()
+    nada = Sprite("imagens/jogo/vazio.png")
+    opcoes = (pedra, nada)
+
     # for x e for y percorrem cada elemento da matriz
     for x in range(i):
         for y in range(j):
+            opcao = random.randint(0, 1)
+            if x == 2:
+                if rock_matriz[x][0] == opcoes[1] or rock_matriz[x][1] == opcoes[1]:
+                    opcao = random.randint(0, 1)
+                else:
+                    opcao = 0
             # Cria o Sprite
-            preda = Sprite(imagens/jogo/pedra.png);
+
             # Define a posição
-            preda.set_position(x * preda.width, y * preda.height)
+            espaco = 500 / (opcoes[opcao].width)+(2 * (opcoes[opcao].width + 50))
+            pedra.set_position(x * (opcoes[opcao].width+50), y * (opcoes[opcao].height+20)+50)
             # Define a direção do movimento, no caso para baixo
-            preda.direction = 1  # 1 = para baixo
+            pedra.direction = 1  # 1 = para baixo
 
 
             # Coloca preda recém criada na matriz
-            rock_matriz[x][y] = preda
+            rock_matriz[x][y] = opcoes[opcao]
