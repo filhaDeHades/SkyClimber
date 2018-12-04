@@ -21,7 +21,7 @@ matrix_x = 3
 matrix_y = 4
 
 
-predas = [[0 for x in range(5)] for x in range(3)] #armazena as preda
+
 
 
 roxo = [190, 117, 216]
@@ -42,7 +42,6 @@ janela = Window(500, 700)
 janela.set_background_color(roxo)
 
 texto = ["Créditos:", "Música:", "...", "...", "...", "Bibliotecas:", "PPlay", "Pygame"]
-inimigos = []
 
 
 def rolar1(bg1, bg2, bg3, bg4, fv, windows):
@@ -186,6 +185,7 @@ def Creditos(windows):
 
 def Jogo(windows):
     grau = -10
+    predas = []
     windows.set_background_color(laranja)
 
     mont = GameImage("imagens/fundo/fundoMontanha.png")
@@ -225,7 +225,7 @@ def Jogo(windows):
     seta.set_sequence_time(0, 8, 100, loop=True)
     seta.play()
 
-    RockTomb.preda(matrix_x, matrix_y, predas)
+    predas = RockTomb.matriz(janela)
 
     while(1):
         if tecla.key_pressed("esc"):
@@ -255,9 +255,9 @@ def Jogo(windows):
         jog1.draw()
         seta.update()
         seta.draw()
-        for row in range(matrix_x):
-            for column in range(matrix_y):
-
-                predas[row][column].draw()
+        print (predas)
+        for x in range (4):
+            for y in range (3):
+                predas[x][y].draw()
 
         windows.update()
