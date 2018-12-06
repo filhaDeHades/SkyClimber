@@ -82,8 +82,18 @@
       <file leaf-file-name="estado.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/estado.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="102">
+              <caret line="262" column="21" selection-start-line="262" selection-start-column="21" selection-end-line="262" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#867#938#0" />
+                <element signature="e#891#1393#0" />
+                <element signature="e#1434#1632#0" />
+                <element signature="e#1665#1866#0" />
+                <element signature="e#1891#2054#0" />
+                <element signature="e#2079#3568#0" />
+                <element signature="e#3597#4792#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -247,6 +257,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4607">
           <caret line="280" column="31" selection-start-line="280" selection-start-column="31" selection-end-line="280" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#867#938#0" />
+            <element signature="e#891#1393#0" />
+            <element signature="e#1434#1632#0" />
+            <element signature="e#1665#1866#0" />
+            <element signature="e#1891#2054#0" />
+            <element signature="e#2079#3568#0" />
+            <element signature="e#3597#4792#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -271,6 +291,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2992">
           <caret line="176" column="29" selection-start-line="176" selection-start-column="29" selection-end-line="176" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#867#938#0" />
+            <element signature="e#891#1393#0" />
+            <element signature="e#1434#1632#0" />
+            <element signature="e#1665#1866#0" />
+            <element signature="e#1891#2054#0" />
+            <element signature="e#2079#3568#0" />
+            <element signature="e#3597#4792#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -311,8 +341,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/estado.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        <state relative-caret-position="102">
+          <caret line="262" column="21" selection-start-line="262" selection-start-column="21" selection-end-line="262" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#867#938#0" />
+            <element signature="e#891#1393#0" />
+            <element signature="e#1434#1632#0" />
+            <element signature="e#1665#1866#0" />
+            <element signature="e#1891#2054#0" />
+            <element signature="e#2079#3568#0" />
+            <element signature="e#3597#4792#0" />
+          </folding>
         </state>
       </provider>
     </entry>
