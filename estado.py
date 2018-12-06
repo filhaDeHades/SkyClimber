@@ -5,6 +5,7 @@ from PPlay.gameimage import *
 from PPlay.mouse import *
 from PPlay.keyboard import *
 from PPlay.animation import *
+from PPlay.sound import *
 from time import sleep
 import random
 import RockTomb
@@ -46,6 +47,11 @@ quad = ((janela.height/3)*2)+50
 
 
 texto = ["Créditos:", "Música:", "...", "...", "...", "Bibliotecas:", "PPlay", "Pygame"]
+
+def somClique(botao, arquivo):
+    if botao.is_button_pressed(1):
+        som = Sound(arquivo)
+        som.play()
 
 
 def rolar1(bg1, bg2, bg3, bg4, fv, windows):
@@ -250,6 +256,9 @@ def Jogo(windows):
         if tecla.key_pressed("esc"):
             return 1
         if rato.is_button_pressed(1):
+
+            somClique(rato, "som.ogg")
+
             var1 = True
             var2 = True
             n = seta.get_curr_frame()
