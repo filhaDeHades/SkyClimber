@@ -174,11 +174,14 @@ def Creditos(windows):
     voltar = Sprite("imagens/menu/voltar2.png", frames=2)
     voltar.set_position((bola)-(voltar.width/2), (windows.height - voltar.height)-borda)
 
+    credito = Sprite("imagens/menu/creditoss.png")
+
     while(1):
         rolar1(grad1, grad2, grad3, grad4, velocFundo, windows)
         mont.draw()
         rolar2(nuvem1, nuvem2, velocFundo - nuvem, windows)
-        Texto(texto, windows)
+        credito.draw()
+        #Texto(texto, windows)
         voltar.draw()
         if Clique(voltar) == 0:
             sleep(n)

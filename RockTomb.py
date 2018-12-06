@@ -30,6 +30,7 @@ class Rocha:
     def colisao(self, player):
         if self.collided_perfect(self, player) == True:
             self.coberto = True
+
     def draw(self):
         self.GO.draw()
 
@@ -39,14 +40,12 @@ class Rocha:
         self.GO.x = x
         self.GO.y = y
 
-
-
 def vazio(vet):
     for i in range(4):
         if vet[i] == False:
             vet[1].append(sprite[0])
 
-'''def ult_fil(matriz):
+def ult_fil(matriz):
     n = 0.0
     r = 0
     for x in range(4):
@@ -55,8 +54,9 @@ def vazio(vet):
             print(r)
             print(n)
 
-            if n < r:
-                n = matriz[x][y]'''
+            if n > r:
+                n = matriz[x][y].h
+    return n
 
 
 def vetor(j, janela):
