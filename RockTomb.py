@@ -15,8 +15,6 @@ class Rocha:
     abaixo = False
     vacuo = True
     h = 0
-    ox = 0
-    oy = 0
     def __init__(self, pos, sprite, qual):
 
         self.GO = Sprite(sprite[qual])
@@ -35,8 +33,6 @@ class Rocha:
         self.GO.draw()
 
     def set_position(self, x, y):
-        self.ox = x
-        self.oy = y
         self.GO.x = x
         self.GO.y = y
 

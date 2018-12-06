@@ -193,7 +193,9 @@ def Creditos(windows):
 def Jogo(windows):
     grau = -10
     predas = []
-    var = False
+    ff = 0
+    var1 = var2 = False
+    term1 = term2 = False
 
 
     windows.set_background_color(laranja)
@@ -248,7 +250,8 @@ def Jogo(windows):
         if tecla.key_pressed("esc"):
             return 1
         if rato.is_button_pressed(1):
-            var = True
+            var1 = True
+            var2 = True
             n = seta.get_curr_frame()
             seta.set_initial_frame(n)
             seta.stop()
@@ -262,18 +265,34 @@ def Jogo(windows):
                 grau = 18
             elif n == 4:
                 n = 35
-        if var == True:
-            ff = 0
+        if var1 == True:
+
             if unha > bola+50:
-                unha = unha -10
+                unha = unha -5
+                print("Unha: {}".format(unha))
                 jogador.set_position(bola, quad-100)
                 jog1.set_position(bola - jog1.width / 2, unha)
             else:
-                var = False
-            if ff < 50:
+                var1 = False
+                term1 = True
+        if var2 == True:
+            for i in range(4):
+                for j in range(3):
+                    if ff < 150:
+                        predas[i][j].set_position(predas[i][j].GO.x, predas[i][j].GO.y+5)
+                    else:
+                        var2 = False
+                        term2 = True
+                    ff += 1
+        #essa parte n terminei ainda NÃO MEXER
+        '''if (term1 == True) and (term2 == True):
+            if unha < windows.height:
+                unha += +5
+                jogador.set_position(bola, quad-100)
+                jog1.set_position(bola - jog1.width / 2, unha)
                 for i in range(4):
                     for j in range(3):
-                        predas[i][j].set_position(predas[i][j].ox,predas[i][j].oy+10)
+                        predas[i][j].set_position(predas[i][j].GO.x, predas[i][j].GO.y+5)'''
 
 
 
@@ -284,16 +303,16 @@ def Jogo(windows):
             rolar2(nuvem1, nuvem2, velocFundo - nuvem, windows)
         nuvem1.draw()
         nuvem2.draw()
+
+        for x in range (4):
+            for y in range (3):
+                predas[x][y].draw()
+
         jogador.draw()
         jog1.draw()
         seta.update()
         seta.draw()
 
         #RockTomb.ult_fil(predas)
-
-        for x in range (4):
-            for y in range (3):
-                predas[x][y].draw()
-
 
         windows.update()
