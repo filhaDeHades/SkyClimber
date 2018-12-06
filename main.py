@@ -17,4 +17,5 @@ while(1):
         estadoJogo = estado.Creditos(janela)
     elif estadoJogo == 3:
         estadoJogo = estado.Jogo(janela)
+
     janela.update()

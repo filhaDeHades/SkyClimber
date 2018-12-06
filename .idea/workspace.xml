@@ -2,8 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67bb7790-424f-4a41-aee2-aad11427ebc5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Rock Tomb.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rock Tomb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RockTomb.py" beforeDir="false" afterPath="$PROJECT_DIR$/RockTomb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creditos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creditos1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creditos1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creditos2.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/estado.py" beforeDir="false" afterPath="$PROJECT_DIR$/estado.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fundoMontanha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradiente1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradiente2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradiente3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradiente4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuvens.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pausa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pausa1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pause1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pause1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pause2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pedra1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pedra2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/play1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/play1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/play2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/psc1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/seta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/titulo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/titulo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vazio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voltar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voltar1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voltar1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voltar2.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,60 +48,69 @@
     <session id="-431845735">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="3" />
+          <entry key="py" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="3" />
+          <entry key="Python" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="20" />
+          <entry key="py" value="1907" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="20" />
+          <entry key="Python" value="1907" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/estado.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="260" column="42" selection-start-line="260" selection-start-column="42" selection-end-line="260" selection-end-column="42" />
+            <state relative-caret-position="272">
+              <caret line="272" column="72" selection-start-line="272" selection-start-column="72" selection-end-line="272" selection-end-column="72" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#695#1197#0" />
-                <element signature="e#1238#1436#0" />
-                <element signature="e#1469#1670#0" />
-                <element signature="e#1695#1858#0" />
-                <element signature="e#1883#3381#0" />
-                <element signature="e#3410#4535#0" />
-                <element signature="e#7055#7129#0" />
+                <element signature="e#835#1337#0" />
+                <element signature="e#1378#1576#0" />
+                <element signature="e#1609#1810#0" />
+                <element signature="e#1835#1998#0" />
+                <element signature="e#2023#3536#0" />
+                <element signature="e#3565#4695#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Rock Tomb.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RockTomb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+            <state relative-caret-position="134">
+              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
               <folding>
-                <element signature="e#37#67#0" expanded="true" />
+                <element signature="e#309#493#0" />
+                <element signature="e#505#584#0" />
+                <element signature="e#574#588#0" />
+                <element signature="e#760#843#0" />
+                <element signature="e#854#1081#1" />
+                <element signature="e#1104#1507#0" />
+                <element signature="e#1533#1662#0" />
+                <element signature="e#1582#1646#0" />
+                <element signature="e#1705#2690#0" />
+                <element signature="e#1974#2691#0" />
               </folding>
             </state>
           </provider>
@@ -77,7 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="323">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -87,14 +130,29 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>self</find>
+      <find>print</find>
+      <find>windows.width/2</find>
+      <find>((windows.height/3)*2)+50</find>
+      <find>vazi</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/estado.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/RockTomb.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/estado.py" />
         <option value="$PROJECT_DIR$/Rock Tomb.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/estado.py" />
+        <option value="$PROJECT_DIR$/RockTomb.py" />
       </list>
     </option>
   </component>
@@ -137,6 +195,34 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SkyClimber" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -151,23 +237,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="654" height="807" extended-state="1" />
+    <frame x="-8" y="-8" width="1296" height="816" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32991204" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -177,19 +263,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Rock Tomb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-          <folding>
-            <element signature="e#37#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Rock Tomb.py" />
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -198,17 +276,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/estado.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="260" column="42" selection-start-line="260" selection-start-column="42" selection-end-line="260" selection-end-column="42" />
+        <state relative-caret-position="272">
+          <caret line="272" column="72" selection-start-line="272" selection-start-column="72" selection-end-line="272" selection-end-column="72" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#695#1197#0" />
-            <element signature="e#1238#1436#0" />
-            <element signature="e#1469#1670#0" />
-            <element signature="e#1695#1858#0" />
-            <element signature="e#1883#3381#0" />
-            <element signature="e#3410#4535#0" />
-            <element signature="e#7055#7129#0" />
+            <element signature="e#835#1337#0" />
+            <element signature="e#1378#1576#0" />
+            <element signature="e#1609#1810#0" />
+            <element signature="e#1835#1998#0" />
+            <element signature="e#2023#3536#0" />
+            <element signature="e#3565#4695#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RockTomb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+          <folding>
+            <element signature="e#309#493#0" />
+            <element signature="e#505#584#0" />
+            <element signature="e#574#588#0" />
+            <element signature="e#760#843#0" />
+            <element signature="e#854#1081#1" />
+            <element signature="e#1104#1507#0" />
+            <element signature="e#1533#1662#0" />
+            <element signature="e#1582#1646#0" />
+            <element signature="e#1705#2690#0" />
+            <element signature="e#1974#2691#0" />
           </folding>
         </state>
       </provider>

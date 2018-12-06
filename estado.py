@@ -41,6 +41,10 @@ tecla = Keyboard()
 janela = Window(500, 700)
 janela.set_background_color(roxo)
 
+bola = janela.width/2
+quad = ((janela.height/3)*2)+50
+
+
 texto = ["Créditos:", "Música:", "...", "...", "...", "Bibliotecas:", "PPlay", "Pygame"]
 
 
@@ -120,11 +124,11 @@ def Menu(windows):
 
     play = GameObject()
     play = Sprite("imagens/menu/play2.png", frames=2)
-    play.set_position((windows.width/2)-(play.width/2), (windows.height/2)-(play.height/2))
+    play.set_position(bola-(play.width/2), (windows.height/2)-(play.height/2))
 
     creditos = GameObject()
     creditos = Sprite("imagens/menu/creditos2.png", frames=2)
-    creditos.set_position((windows.width/2)-(creditos.width/2), (windows.height - creditos.height)-borda)
+    creditos.set_position((bola)-(creditos.width/2), (windows.height - creditos.height)-borda)
 
     while(1):
         rolar1(grad1, grad2, grad3, grad4, velocFundo, windows)
@@ -168,7 +172,7 @@ def Creditos(windows):
 
     voltar = GameObject()
     voltar = Sprite("imagens/menu/voltar2.png", frames=2)
-    voltar.set_position((windows.width/2)-(voltar.width/2), (windows.height - voltar.height)-borda)
+    voltar.set_position((bola)-(voltar.width/2), (windows.height - voltar.height)-borda)
 
     while(1):
         rolar1(grad1, grad2, grad3, grad4, velocFundo, windows)
@@ -186,6 +190,9 @@ def Creditos(windows):
 def Jogo(windows):
     grau = -10
     predas = []
+    var = False
+
+
     windows.set_background_color(laranja)
 
     mont = GameImage("imagens/fundo/fundoMontanha.png")
@@ -213,12 +220,17 @@ def Jogo(windows):
     #Oq realmente vai ser o jogador por enquanto
     jogador = GameObject()
     jogador = Sprite("imagens/jogo/bola.png", frames=1)
-    jogador.set_position(windows.width/2, ((windows.height/3)*2)+50)
+    jogador.set_position(bola, quad)
 
     #personagem puramente grafico por enquanto
+
     jog1 = GameObject()
     jog1 = Sprite("imagens/jogo/psc1.png")
-    jog1.set_position(windows.width/2-jog1.width/2, windows.height - (jog1.height-40)+50)
+    unha = windows.height - (jog1.height - 40) + 50
+    dedo = bola - jog1.width / 2
+    jog1.set_position(dedo, unha)
+
+
 
     seta = Animation("imagens/jogo/seta.png", total_frames=9, loop=True)
     seta.set_position((jogador.x+jogador.width/2) - seta.width/2, (jogador.y -seta.height))
@@ -226,11 +238,14 @@ def Jogo(windows):
     seta.play()
 
     predas = RockTomb.matriz(janela)
+    for x in range(3):
+        RockTomb.vazio(predas)
 
     while(1):
         if tecla.key_pressed("esc"):
             return 1
         if rato.is_button_pressed(1):
+            var = True
             n = seta.get_curr_frame()
             seta.set_initial_frame(n)
             seta.stop()
@@ -244,6 +259,21 @@ def Jogo(windows):
                 grau = 18
             elif n == 4:
                 n = 35
+        if var == True:
+            ff = 0
+            if unha > bola+50:
+                unha = unha -10
+                jogador.set_position(bola, quad-100)
+                jog1.set_position(bola - jog1.width / 2, unha)
+            else:
+                var = False
+            if ff < 50:
+                for i in range(4):
+                    for j in range(3):
+                        predas[i][j].set_position(predas[i][j].ox,predas[i][j].oy+10)
+
+
+
         janela.set_background_color(laranja)
         rolar1(grad1, grad2, grad3, grad4, velocFundo, windows)
         mont.draw()
@@ -255,9 +285,12 @@ def Jogo(windows):
         jog1.draw()
         seta.update()
         seta.draw()
-        print (predas)
+
+        #RockTomb.ult_fil(predas)
+
         for x in range (4):
             for y in range (3):
                 predas[x][y].draw()
+
 
         windows.update()
