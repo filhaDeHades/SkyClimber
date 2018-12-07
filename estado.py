@@ -259,7 +259,7 @@ def Jogo(windows):
         if tecla.key_pressed("esc"):
             return 1
         if rato.is_button_pressed(1):
-            sleep(0.2)
+            sleep(0.5)
             desSeta = False
             somClique(rato, "som.ogg")
 
@@ -282,7 +282,7 @@ def Jogo(windows):
 
             if unha > bola+50:
                 unha = unha -2
-                jogador.set_position(bola, quad-100)
+                #jogador.set_position(bola, quad-100)
                 jog1.set_position(bola - jog1.width / 2, unha)
             else:
                 var1 = False
@@ -306,7 +306,7 @@ def Jogo(windows):
             else:
                 term1 = term2 = False
                 desSeta = True
-                var1 = var2 = False
+                var1 = False
                 desPedra = True
                 unha = 300
                 ff = 0
@@ -314,10 +314,11 @@ def Jogo(windows):
 
             for i in range(5):
                 for j in range(3):
-                    if predas[0][0].GO.y < 10:
+                    if predas[0][0].GO.y < 0:
                         predas[i][j].set_position(predas[i][j].GO.x, predas[i][j].GO.y+2)
                     else:
                         desPedra = False
+                        var2 = False
 
 
 

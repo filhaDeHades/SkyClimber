@@ -86,34 +86,45 @@ def matriz(janela):
 
 def atualizaMatVert(matriz, janela):
     for i in range(5):
+        m = 4
+        if i == 0:
+            matriz[4].clear()
+        elif i == 1:
+            matriz[3].clear()
+        elif i == 2:
+            matriz[2].clear()
+        elif i == 3:
+            matriz[1].clear()
         for j in range(3):
             if i >= 0 and i<=3:
+                vet = matriz[m]
                 if i == 0:
-                    matriz[3][j].GO = matriz[4][j].GO
-                    matriz[3][j].vacuo = matriz[4][j].vacuo
-                    matriz[3][j].set_position(matriz[3][j].GO.x, 300)
-                    print("Y:")
-                    print(matriz[-1 - i][j].GO.y)
+                    matriz[4].append(matriz[3][j])
+                    #matriz[3][j].vacuo = matriz[4][j].vacuo
+                    #matriz[3][j].set_position(matriz[3][j].GO.x, 300)
                 elif i == 1:
-                    matriz[2][j].GO = matriz[3][j].GO
-                    matriz[2][j].vacuo = matriz[3][j].vacuo
-                    matriz[2][j].set_position(matriz[2][j].GO.x, 200)
+                    matriz[3].append(matriz[2][j])
+                    #matriz[2][j].GO = matriz[3][j].GO
+                    #matriz[2][j].vacuo = matriz[3][j].vacuo
+                    #matriz[2][j].set_position(matriz[2][j].GO.x, 200)
                 elif i == 2:
-                    matriz[1][j].GO = matriz[2][j].GO
-                    matriz[1][j].vacuo = matriz[2][j].vacuo
-                    matriz[1][j].set_position(matriz[1][j].GO.x, 100)
+                    matriz[2].append(matriz[1][j])
+                    #matriz[1][j].GO = matriz[2][j].GO
+                    #matriz[1][j].vacuo = matriz[2][j].vacuo
+                    #matriz[1][j].set_position(matriz[1][j].GO.x, 100)
                 elif i == 3:
-                    matriz[0][j].GO = matriz[1][j].GO
-                    matriz[0][j].vacuo = matriz[1][j].vacuo
-                    matriz[0][j].set_position(matriz[0][j].GO.x, 0)
+                    matriz[1].append(matriz[0][j])
+                    #matriz[0][j].GO = matriz[1][j].GO
+                    #matriz[0][j].vacuo = matriz[1][j].vacuo
+                    #matriz[0][j].set_position(matriz[0][j].GO.x, 0)
 
                 #consideramos a ultima posição
-
+        m -= 1
         if i == 4:
             matriz.insert(0, vetor(-100, janela))
     print("\n")
     for k in range(5):
-        print(matriz[k][0].GO.y)
+        print(matriz[k])
     return matriz
 
 def preda(i, j, rock_matriz):
