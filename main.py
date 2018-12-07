@@ -2,11 +2,15 @@ import estado
 from PPlay.window import *
 from PPlay.keyboard import *
 from PPlay.sound import *
+from PPlay.mouse import *
+
 estadoJogo = 1
 
 roxo = [190, 117, 216]
 
 fundo = roxo
+
+rato = Mouse()
 
 janela = Window(500, 700)
 janela.set_background_color(roxo)
@@ -25,6 +29,10 @@ while(1):
         estadoJogo = estado.Creditos(janela)
     elif estadoJogo == 3:
         estadoJogo = estado.Jogo(janela)
+
+    estado.somClique(rato, "som.ogg")
+    #if rato.is_button_pressed(1):
+        #som.play()
 
 
     janela.update()

@@ -5,6 +5,7 @@ from PPlay.gameimage import *
 from PPlay.mouse import *
 from PPlay.keyboard import *
 from PPlay.animation import *
+from PPlay.sound import *
 from time import sleep
 import random
 import RockTomb
@@ -43,10 +44,16 @@ janela.set_background_color(roxo)
 
 bola = janela.width/2
 quad = ((janela.height/3)*2)+50
+posIni1 = janela.width/2
+posIni2 = ((janela.height/3)*2)+50
 
 
 texto = ["Créditos:", "Música:", "...", "...", "...", "Bibliotecas:", "PPlay", "Pygame"]
 
+def somClique(botao, arquivo):
+    if botao.is_button_pressed(1):
+        som = Sound(arquivo)
+        som.play()
 
 def rolar1(bg1, bg2, bg3, bg4, fv, windows):
     bg1.y -= fv * (windows.delta_time()+0.5)
@@ -196,6 +203,8 @@ def Jogo(windows):
     ff = 0
     var1 = var2 = False
     term1 = term2 = False
+    desPedra = True
+    desSeta = True
 
 
     windows.set_background_color(laranja)
@@ -232,6 +241,7 @@ def Jogo(windows):
     jog1 = GameObject()
     jog1 = Sprite("imagens/jogo/psc1.png")
     unha = windows.height - (jog1.height - 40) + 50
+    posIni2 = unha
     dedo = bola - jog1.width / 2
     jog1.set_position(dedo, unha)
 
@@ -249,6 +259,10 @@ def Jogo(windows):
         if tecla.key_pressed("esc"):
             return 1
         if rato.is_button_pressed(1):
+            sleep(0.2)
+            desSeta = False
+            somClique(rato, "som.ogg")
+
             var1 = True
             var2 = True
             n = seta.get_curr_frame()
@@ -267,8 +281,7 @@ def Jogo(windows):
         if var1 == True:
 
             if unha > bola+50:
-                unha = unha -5
-                #print("Unha: {}".format(unha))
+                unha = unha -2
                 jogador.set_position(bola, quad-100)
                 jog1.set_position(bola - jog1.width / 2, unha)
             else:
@@ -278,20 +291,25 @@ def Jogo(windows):
             for i in range(5):
                 for j in range(3):
                     if ff < 150:
-                        predas[i][j].set_position(predas[i][j].GO.x, predas[i][j].GO.y+5)
+                        predas[i][j].set_position(predas[i][j].GO.x, predas[i][j].GO.y+2)
                     else:
                         var2 = False
                         term2 = True
                     ff += 1
         #essa parte n terminei ainda NÃO MEXER
-        '''if (term1 == True) and (term2 == True):
-            if unha < windows.height:
-                unha += +5
-                jogador.set_position(bola, quad-100)
-                jog1.set_position(bola - jog1.width / 2, unha)
-                for i in range(4):
-                    for j in range(3):
-                        predas[i][j].set_position(predas[i][j].GO.x, predas[i][j].GO.y+5)'''
+        if (term1 == True) and (term2 == True):
+            if unha < posIni2:
+                unha += +2
+                #jogador.set_position(bola, quad-100)
+                jog1.set_position(bola-(jog1.width/2), unha)
+            for i in range(4):
+                for j in range(3):
+                    if predas[0][0].GO.y < 10:
+                        predas[i][j].set_position(predas[i][j].GO.x, predas[i][j].GO.y+2)
+                    else:
+                        desPedra = False
+            term1 = term2 = True
+            desSeta = True
 
 
 
@@ -307,10 +325,12 @@ def Jogo(windows):
             for y in range (3):
                 predas[x][y].draw()
 
-        jogador.draw()
+        #jogador.draw()
         jog1.draw()
         seta.update()
-        seta.draw()
+        if desSeta == True:
+            seta.play()
+            seta.draw()
 
         #RockTomb.ult_fil(predas)
 
