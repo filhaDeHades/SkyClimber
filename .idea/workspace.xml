@@ -2,45 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67bb7790-424f-4a41-aee2-aad11427ebc5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/SkyClimber.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SkyClimber.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RockTomb.py" beforeDir="false" afterPath="$PROJECT_DIR$/RockTomb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bola.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/creditos.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/creditos1-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/creditos1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/creditos2.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/estado.py" beforeDir="false" afterPath="$PROJECT_DIR$/estado.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fundoMontanha.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradiente1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradiente2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradiente3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradiente4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuvens.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pausa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pausa1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pause.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pause1-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pause1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pause2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pedra1-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pedra1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/play.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/play1-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/play1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/play2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/psc1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/seta.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/titulo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/titulo1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vazio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voltar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voltar1-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voltar1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voltar2.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,8 +19,9 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -67,23 +36,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2330" />
+          <entry key="py" value="2762" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2330" />
+          <entry key="Python" value="2762" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="estado.py" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/estado.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="280" column="31" selection-start-line="280" selection-start-column="31" selection-end-line="280" selection-end-column="31" />
+            <state relative-caret-position="102">
+              <caret line="277" column="28" selection-start-line="277" selection-start-column="28" selection-end-line="277" selection-end-column="28" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -91,16 +60,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RockTomb.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RockTomb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            <state relative-caret-position="210">
+              <caret line="80" column="20" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
+              <folding>
+                <element signature="e#882#1093#0" />
+                <element signature="e#1122#1583#0" />
+                <element signature="e#1775#2760#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -136,13 +110,14 @@
       <list>
         <option value="$PROJECT_DIR$/Rock Tomb.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/RockTomb.py" />
         <option value="$PROJECT_DIR$/estado.py" />
+        <option value="$PROJECT_DIR$/RockTomb.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
+    <option name="y" value="66" />
     <option name="width" value="654" />
     <option name="height" value="807" />
   </component>
@@ -151,7 +126,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,6 +137,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,6 +174,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
@@ -219,59 +197,42 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="816" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15699404" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32933104" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15659778" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32844576" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32991204" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32991204" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/estado.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2992">
-          <caret line="176" column="29" selection-start-line="176" selection-start-column="29" selection-end-line="176" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RockTomb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Rock Tomb.py" />
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -283,19 +244,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RockTomb.py">
+    <entry file="file://$PROJECT_DIR$/estado.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        <state relative-caret-position="102">
+          <caret line="277" column="28" selection-start-line="277" selection-start-column="28" selection-end-line="277" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/estado.py">
+    <entry file="file://$PROJECT_DIR$/RockTomb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="280" column="31" selection-start-line="280" selection-start-column="31" selection-end-line="280" selection-end-column="31" />
+        <state relative-caret-position="210">
+          <caret line="80" column="20" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#882#1093#0" />
+            <element signature="e#1122#1583#0" />
+            <element signature="e#1775#2760#0" />
           </folding>
         </state>
       </provider>

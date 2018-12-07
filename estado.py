@@ -243,8 +243,7 @@ def Jogo(windows):
     seta.play()
 
     predas = RockTomb.matriz(janela)
-    for x in range(3):
-        RockTomb.vazio(predas)
+
 
     while(1):
         if tecla.key_pressed("esc"):
@@ -269,14 +268,14 @@ def Jogo(windows):
 
             if unha > bola+50:
                 unha = unha -5
-                print("Unha: {}".format(unha))
+                #print("Unha: {}".format(unha))
                 jogador.set_position(bola, quad-100)
                 jog1.set_position(bola - jog1.width / 2, unha)
             else:
                 var1 = False
                 term1 = True
         if var2 == True:
-            for i in range(4):
+            for i in range(5):
                 for j in range(3):
                     if ff < 150:
                         predas[i][j].set_position(predas[i][j].GO.x, predas[i][j].GO.y+5)
@@ -304,7 +303,7 @@ def Jogo(windows):
         nuvem1.draw()
         nuvem2.draw()
 
-        for x in range (4):
+        for x in range (5):
             for y in range (3):
                 predas[x][y].draw()
 

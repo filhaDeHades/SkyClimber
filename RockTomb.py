@@ -36,10 +36,10 @@ class Rocha:
         self.GO.x = x
         self.GO.y = y
 
-def vazio(vet):
-    for i in range(4):
-        if vet[i] == False:
-            vet[1].append(sprite[0])
+'''def vazio(vector):
+    for i in range(3):
+        if vector[i] == imagem[1]:
+            return True'''
 
 def ult_fil(matriz):
     n = 0.0
@@ -78,10 +78,9 @@ def vetor(j, janela):
 def matriz(janela):
     j = 0
     mat =[]
-    for j in range(4):
-        altura = (j - 1) * 135
+    for j in range(5):
+        altura = (j - 1) * 100
         mat.append(vetor(altura, janela))
-
     return mat
 
 def preda(i, j, rock_matriz):
