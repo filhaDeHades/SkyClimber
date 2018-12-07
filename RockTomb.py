@@ -36,10 +36,11 @@ class Rocha:
         self.GO.x = x
         self.GO.y = y
 
-'''def vazio(vector):
+def vazio(vector):
     for i in range(3):
-        if vector[i] == imagem[1]:
-            return True'''
+        if vector[i].vacuo == True:
+            return True
+
 
 def ult_fil(matriz):
     n = 0.0
@@ -82,6 +83,38 @@ def matriz(janela):
         altura = (j - 1) * 100
         mat.append(vetor(altura, janela))
     return mat
+
+def atualizaMatVert(matriz, janela):
+    for i in range(5):
+        for j in range(3):
+            if i >= 0 and i<=3:
+                if i == 0:
+                    matriz[3][j].GO = matriz[4][j].GO
+                    matriz[3][j].vacuo = matriz[4][j].vacuo
+                    matriz[3][j].set_position(matriz[3][j].GO.x, 300)
+                    print("Y:")
+                    print(matriz[-1 - i][j].GO.y)
+                elif i == 1:
+                    matriz[2][j].GO = matriz[3][j].GO
+                    matriz[2][j].vacuo = matriz[3][j].vacuo
+                    matriz[2][j].set_position(matriz[2][j].GO.x, 200)
+                elif i == 2:
+                    matriz[1][j].GO = matriz[2][j].GO
+                    matriz[1][j].vacuo = matriz[2][j].vacuo
+                    matriz[1][j].set_position(matriz[1][j].GO.x, 100)
+                elif i == 3:
+                    matriz[0][j].GO = matriz[1][j].GO
+                    matriz[0][j].vacuo = matriz[1][j].vacuo
+                    matriz[0][j].set_position(matriz[0][j].GO.x, 0)
+
+                #consideramos a ultima posição
+
+        if i == 4:
+            matriz.insert(0, vetor(-100, janela))
+    print("\n")
+    for k in range(5):
+        print(matriz[k][0].GO.y)
+    return matriz
 
 def preda(i, j, rock_matriz):
 

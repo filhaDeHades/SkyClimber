@@ -296,20 +296,28 @@ def Jogo(windows):
                         var2 = False
                         term2 = True
                     ff += 1
-        #essa parte n terminei ainda NÃO MEXER
+        #quando os dois terminam
         if (term1 == True) and (term2 == True):
             if unha < posIni2:
                 unha += +2
                 #jogador.set_position(bola, quad-100)
                 jog1.set_position(bola-(jog1.width/2), unha)
-            for i in range(4):
+
+            else:
+                term1 = term2 = False
+                desSeta = True
+                var1 = var2 = False
+                desPedra = True
+                unha = 300
+                ff = 0
+                predas = RockTomb.atualizaMatVert(predas, windows)
+
+            for i in range(5):
                 for j in range(3):
                     if predas[0][0].GO.y < 10:
                         predas[i][j].set_position(predas[i][j].GO.x, predas[i][j].GO.y+2)
                     else:
                         desPedra = False
-            term1 = term2 = True
-            desSeta = True
 
 
 
